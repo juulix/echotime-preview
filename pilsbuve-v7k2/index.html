@@ -31,6 +31,7 @@ h2{font-size:clamp(32px,5.4vw,54px);margin:12px 0 16px}
 .d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
 .sketch{position:fixed;left:10px;bottom:10px;z-index:60;background:var(--ink);color:#fff;font:600 11.5px/1.3 var(--b);padding:8px 12px;border-radius:999px;box-shadow:0 8px 20px -8px rgba(0,0,0,.5)}
 .sketch b{color:#ffb3b1}
+@media(max-width:959px){.sketch{bottom:auto;top:calc(var(--hdr) + 8px);font-size:10.5px;padding:6px 10px}}
 
 /* header */
 .hdr{position:fixed;inset:0 0 auto;z-index:50;height:var(--hdr);background:rgba(255,255,255,.96);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
@@ -74,6 +75,7 @@ h2{font-size:clamp(32px,5.4vw,54px);margin:12px 0 16px}
 .c2 small{display:block;font:700 11.5px/1 var(--b);letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.55)}
 .c2 h3{font-size:clamp(28px,7vw,48px);margin:8px 0 8px}
 .c2 p{font-size:15px;color:rgba(255,255,255,.75);max-width:44ch}
+.facts{list-style:none;display:grid;gap:6px;margin-top:6px;font-size:14.5px;color:rgba(255,255,255,.85)}.facts span{display:inline-block;min-width:92px;font:700 11px/1.6 var(--b);letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.5)}
 .bar{display:flex;gap:6px;margin-top:14px}.bar i{flex:1;height:3px;background:rgba(255,255,255,.14);position:relative;overflow:hidden}.bar i b{position:absolute;inset:0;background:var(--red);transform-origin:left;transform:scaleX(0)}
 .stagebp{position:relative;min-height:0}
 .stagebp img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;z-index:2;clip-path:inset(0 100% 0 0)}
@@ -154,6 +156,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
   .cap{display:flex;flex-direction:column;justify-content:center;padding:0 30px 0 max(var(--gut),calc((100vw - var(--max))/2 + var(--gut)))}
   .c2 p{font-size:16.5px}
   .srv{grid-template-columns:repeat(4,1fr)}
+  .proj{grid-template-columns:repeat(3,1fr)}.pj.big{grid-column:1/-1}
   .sec{padding:110px 0}
   .split{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
   .cg{grid-template-columns:1fr 1fr;gap:70px}
@@ -163,7 +166,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
 </style>
 </head>
 <body>
-<div class="sketch"><b>SKICE</b> · Echo Time · nav publicēta lapa</div>
+<div class="sketch"><b>SKICE</b> · Echo Time · saturs vēl saskaņojams ar PILSBŪVI</div>
 
 <header class="hdr"><div class="wrap">
   <a class="logo" href="#"><img src="img/logo.webp" alt="SIA PILSBŪVE" width="640" height="269"></a>
@@ -183,7 +186,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
   <div class="wrap"><div>
     <span class="k rv">SIA "PILSBŪVE" · Ventspils</span>
     <h1 class="rv d1">Būvējam jaunu. <em>Atjaunojam vēsturisko.</em></h1>
-    <p class="rv d2">Sabiedrisko, rūpniecisko un civilo ēku būvniecība, pārbūve un restaurācija Ventspilī, Kurzemē un visā Latvijā.</p>
+    <p class="rv d2">Ēku būvniecība, pārbūve un restaurācija Ventspilī, Kurzemē un visā Latvijā.</p>
     <div class="ctas rv d3">
       <a class="btn btn-r" href="#kontakti">Pieprasīt piedāvājumu <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       <a class="btn btn-w" href="#darbi">Mūsu darbi</a>
@@ -199,8 +202,8 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
       <div class="caps2">
         <div class="c2 on"><small>01 · Esošā ēka</small><h3>Vispirms izpētām esošo ēku.</h3><p>Restaurācija sākas ar ēkas stāvokļa un tās vēstures izpēti.</p></div>
         <div class="c2"><small>02 · Detaļas</small><h3>Fiksējam vēsturiskās detaļas.</h3><p>Logu ailes, dzegas, apmetums un jumta segums: viss, kas veido ēkas raksturu.</p></div>
-        <div class="c2"><small>03 · Atjaunošana</small><h3>Saglabājam vēsturiskās ēkas raksturu.</h3><p>Fasāde, logi un jumts tiek atjaunoti, nezaudējot oriģinālo izskatu.</p></div>
-        <div class="c2"><small>04 · Rezultāts</small><h3>Livonijas ordeņa pils, Ventspils.</h3><p>Pils kompleksa rekonstrukcija, restaurācija un ekspozīcijas izveide. Pasūtītājs: Ventspils muzejs. Restaurācijas 2. kārta: 1. vieta skatē "Gada labākā būve" 2011, nominācija "Restaurācija".</p></div>
+        <div class="c2"><small>03 · Atjaunošana</small><h3>Saglabājam vēsturiskās ēkas raksturu.</h3><p>Fasāde, logi un jumts tiek atjaunoti, saglabājot ēkas vēsturisko raksturu.</p></div>
+        <div class="c2"><small>04 · Rezultāts</small><h3>Livonijas ordeņa pils, Ventspils.</h3><ul class="facts"><li><span>Darbi</span>rekonstrukcija, restaurācija, ekspozīcijas izveide</li><li><span>Pasūtītājs</span>Ventspils muzejs</li><li><span>Balva</span>1. vieta "Gada labākā būve" 2011, "Restaurācija" (2. kārta)</li></ul></div>
       </div>
       <div class="bar" id="bar"><i><b></b></i><i><b></b></i><i><b></b></i><i><b></b></i></div>
     </div>
@@ -222,7 +225,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
         <g id="notes" fill="none" stroke="#9cc3ef" stroke-width="1.4"></g>
         <path d="M100 524H780" stroke="#9cc3ef" stroke-opacity=".45" stroke-width="1.2"/>
       </svg>
-      <span class="illu" id="illu">Ilustrācija</span>
+      <span class="illu" id="illu">Restaurācijas procesa ilustrācija</span>
     </div>
   </div>
 </section>
@@ -230,9 +233,9 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
 <section class="sec alt" id="pakalpojumi"><div class="wrap">
   <span class="k rv">Pakalpojumi</span>
   <h2 class="rv d1">Būvniecība, pārbūve un restaurācija.</h2>
-  <p class="lead rv d2">Strādājam ar mūsdienīgām tehnoloģijām un augsti kvalificētu personālu, kurš kvalitāti uzskata par vērtību.</p>
+  <p class="lead rv d2">Būvdarbus veicam un vadām paši: no konstrukcijām līdz inženiertīkliem un projektu vadībai.</p>
   <div class="srv">
-    <div class="rv"><h3>Jaunbūve</h3><p>Sabiedrisko, rūpniecisko un civilo ēku būvniecība.</p></div>
+    <div class="rv"><h3>Jaunbūve</h3><p>Sabiedrisko, ražošanas un dzīvojamo ēku būvniecība.</p></div>
     <div class="rv d1"><h3>Pārbūve un renovācija</h3><p>Ēku rekonstrukcija, remonts un energoefektivitātes paaugstināšana.</p></div>
     <div class="rv d2"><h3>Restaurācija</h3><p>Vēsturisku ēku un kultūras mantojuma objektu restaurācija.</p></div>
     <div class="rv d3"><h3>Inženiertīkli un vadība</h3><p>Ūdensapgādes, kanalizācijas, siltumapgādes un ventilācijas sistēmu būvdarbi, būvdarbu vadīšana un projektu vadība.</p></div>
@@ -255,9 +258,6 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
     <article class="pj rv"><div class="im"><img src="img/jaunrades.webp" alt="Skolēnu jaunrades nams" loading="lazy" style="object-position:center 30%"></div><div class="t"><small>Rekonstrukcija · Ventspils</small><h3>Skolēnu jaunrades nams</h3>
       <dl><dt>Darbi</dt><dd>Izbūve, Maiznieku iela 11</dd></dl>
       <span class="award">3. vieta "Gada labākā būve Latvijā 2010", nominācija "Rekonstrukcija"</span></div></article>
-    <article class="pj txt rv d1"><div class="im">Foto: Ventspils pilsētas dome, Jūras iela 36</div><div class="t"><small>Renovācija · Ventspils</small><h3>Ventspils pilsētas dome</h3>
-      <dl><dt>Darbi</dt><dd>Fasāžu renovācija, energoefektivitātes paaugstināšana ar pasīvās ēkas komponentiem</dd><dt>Pasūtītājs</dt><dd>Ventspils pilsētas dome, SIA "Ventspils nekustamie īpašumi"</dd></dl>
-      <span class="award">2. vieta "Energoefektīvākā ēka Latvijā 2013"</span></div></article>
   </div>
 </div></section>
 
@@ -291,7 +291,6 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
       <div><b>2012</b><p>LDDK atzinība: labākais darba devējs Kurzemē</p></div>
       <div><b>ISO 9001:2015</b><p>Kvalitātes vadības sistēma</p></div>
     </div>
-    <p class="note rv">Skicē izmantoti dati no pašreizējās pilsbuve.lv lapas. Aktualitāti apstiprināsiet jūs.</p>
   </div>
 </div></section>
 
@@ -311,7 +310,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
     <div><label for="fo">Objekta veids</label><select id="fo" name="obj"><option>Jaunbūve</option><option>Pārbūve / renovācija</option><option>Restaurācija</option><option>Inženiertīkli</option><option>Cits</option></select></div>
     <div><label for="fm">Īsi par darbiem</label><textarea id="fm" name="msg"></textarea></div>
     <button class="btn btn-r" type="submit">Nosūtīt pieprasījumu</button>
-    <p class="fn">Skicē poga atver e-pasta programmu. Gala versijā pieprasījums nonāks tieši uz pilsbuve@pilsbuve.lv, un sūtītājs saņems apstiprinājumu.</p>
+    <p class="fn">Demonstrācijas forma — poga atver e-pasta programmu.</p>
   </form>
 </div></section>
 <footer><div class="wrap"><span>© 2026 SIA "PILSBŪVE" · Kuldīgas iela 9, Ventspils</span><span>Gala versijā arī EN un RU · Skici sagatavoja Echo Time</span></div></footer>
@@ -320,11 +319,14 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
 const $=s=>document.querySelector(s);
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
 document.querySelectorAll('.rv').forEach(e=>io.observe(e));
-function drawer(o){$('#drawer').classList.toggle('open',o);$('#drawer').setAttribute('aria-hidden',!o);$('#burger').setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''}
+function drawer(o){$('#drawer').classList.toggle('open',o);$('#drawer').setAttribute('aria-hidden',!o);$('#burger').setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':'';
+  if(o)setTimeout(()=>$('#drawer a').focus(),50);else if(document.activeElement&&$('#drawer').contains(document.activeElement))$('#burger').focus()}
+addEventListener('keydown',e=>{if(e.key==='Escape'&&$('#drawer').classList.contains('open'))drawer(false)});
 $('#burger').onclick=()=>drawer(true);$('#drawerX').onclick=()=>drawer(false);document.querySelectorAll('#drawer a').forEach(a=>a.addEventListener('click',()=>drawer(false)));
-$('#form').addEventListener('submit',e=>{e.preventDefault();const f=e.target;
-  const body=[`Vārds: ${f.name.value}`,`Uzņēmums: ${f.company.value}`,`Tālrunis: ${f.tel.value}`,`E-pasts: ${f.email.value}`,`Objekts: ${f.obj.value}`,'',f.msg.value].join('\n');
-  location.href='mailto:pilsbuve@pilsbuve.lv?subject='+encodeURIComponent('Pieprasījums: '+f.obj.value)+'&body='+encodeURIComponent(body)});
+window.buildMail=form=>{const d=new FormData(form),v=k=>(d.get(k)||'').toString().trim();
+  const body=[`Vārds: ${v('name')}`,`Uzņēmums: ${v('company')}`,`Tālrunis: ${v('tel')}`,`E-pasts: ${v('email')}`,`Objekts: ${v('obj')}`,'',v('msg')].join('\n');
+  return 'mailto:pilsbuve@pilsbuve.lv?subject='+encodeURIComponent('Pieprasījums: '+v('obj'))+'&body='+encodeURIComponent(body)};
+$('#form').addEventListener('submit',e=>{e.preventDefault();location.href=buildMail(e.target)});
 
 /* ---------- restoration story ---------- */
 (()=>{const NS='http://www.w3.org/2000/svg';
