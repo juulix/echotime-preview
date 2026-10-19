@@ -6,18 +6,19 @@
 <meta name="robots" content="noindex, nofollow">
 <title>PILSBŪVE — ēku būvniecība, rekonstrukcija un restaurācija · skice</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,500..800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="img/pils.webp">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600;700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600;700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
+<link rel="preload" as="image" href="img/pils-800.webp" imagesrcset="img/pils-800.webp 800w, img/pils.webp 1600w" imagesizes="(min-width:960px) 56vw, 100vw">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Cpath d=%27M3 16L16 5l13 11v1H3z%27 fill=%27%23D8231F%27/%3E%3Crect x=%277%27 y=%2717%27 width=%2718%27 height=%2710%27 fill=%27%231C2126%27/%3E%3C/svg%3E">
 <style>
 :root{color-scheme:light;--red:#D8231F;--red-d:#B01916;--ink:#1C2126;--ink2:#3E464E;--muted:#6B737A;--line:#E3E1DC;--bg:#F6F5F2;--paper:#fff;--slate:#20262C;
---h:"Archivo",system-ui,sans-serif;--b:"Manrope",system-ui,-apple-system,sans-serif;--gut:20px;--max:1200px;--hdr:64px}
+--h:"Archivo Narrow","Arial Narrow",system-ui,sans-serif;--b:"Manrope",system-ui,-apple-system,sans-serif;--gut:20px;--max:1200px;--hdr:64px}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:var(--hdr);-webkit-text-size-adjust:100%}
 body{background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--b);overflow-x:clip;-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%}a{color:inherit}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
-h1,h2,h3{font-family:var(--h);font-stretch:85%;font-weight:700;letter-spacing:-.01em;line-height:1.02;text-transform:none}
+h1,h2,h3{font-family:var(--h);font-weight:700;letter-spacing:-.01em;line-height:1.02;text-transform:none}
 .k{display:inline-flex;align-items:center;gap:10px;font:700 12px/1 var(--b);letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
 .k::before{content:"";width:22px;height:3px;background:var(--red)}
 h2{font-size:clamp(32px,6vw,58px);margin:12px 0 16px}
@@ -78,7 +79,7 @@ h2{font-size:clamp(32px,6vw,58px);margin:12px 0 16px}
 .proof{background:var(--ink);color:#fff}
 .proof .wrap{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.08)}
 .proof div{background:var(--ink);padding:24px 6px 22px}
-.proof b{display:block;font:800 clamp(30px,6vw,46px)/1 var(--h);font-stretch:80%;color:#fff}
+.proof b{display:block;font:700 clamp(32px,6.4vw,50px)/1 var(--h);color:#fff}
 .proof b small{font-size:.55em;color:#ff8a86}
 .proof span{display:block;margin-top:8px;font-size:13px;line-height:1.4;color:rgba(255,255,255,.65)}
 
@@ -115,7 +116,7 @@ h2{font-size:clamp(32px,6vw,58px);margin:12px 0 16px}
 /* awards timeline */
 .tl{margin-top:30px;display:grid;gap:0}
 .tl div{display:grid;grid-template-columns:64px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
-.tl b{font:800 26px/1 var(--h);font-stretch:80%;color:var(--red)}
+.tl b{font:700 28px/1 var(--h);color:var(--red)}
 .tl p{font-size:15px;color:var(--ink2)}
 .tl strong{color:var(--ink)}
 
@@ -168,7 +169,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
 </div></header>
 
 <section class="hero">
-  <div class="ph"><img src="img/pils.webp" alt="Ventspils Livonijas ordeņa pils pēc restaurācijas" width="1600" height="1067"><img src="img/biblioteka.webp" alt="Pārventas bibliotēka Ventspilī" width="1600" height="1063"></div>
+  <div class="ph"><img src="img/pils-800.webp" srcset="img/pils-800.webp 800w, img/pils.webp 1600w" sizes="(min-width:960px) 56vw, 100vw" alt="Ventspils Livonijas ordeņa pils pēc restaurācijas" width="1600" height="1067" fetchpriority="high"><img src="img/biblioteka.webp" alt="Pārventas bibliotēka Ventspilī" width="1600" height="1063" loading="lazy"></div>
   <div class="wrap">
     <span class="k rv">SIA "PILSBŪVE" · Ventspils</span>
     <h1 class="rv d1">Būvējam jaunu. <em>Atjaunojam vēsturisko.</em></h1>
@@ -227,7 +228,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
         <g id="lines" fill="none" stroke="#9cc3ef" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"></g>
         <g id="badge" opacity="0" transform="translate(250 165)">
           <circle r="44" fill="#D8231F"/><circle r="38" fill="none" stroke="#fff" stroke-opacity=".6" stroke-dasharray="3 3"/>
-          <text y="-8" text-anchor="middle" font-family="Archivo,sans-serif" font-weight="800" font-size="20" fill="#fff">1.</text>
+          <text y="-8" text-anchor="middle" font-family="Archivo Narrow,sans-serif" font-weight="700" font-size="20" fill="#fff">1.</text>
           <text y="10" text-anchor="middle" font-family="Manrope,sans-serif" font-weight="700" font-size="8" fill="#fff">GADA LABĀKĀ</text>
           <text y="21" text-anchor="middle" font-family="Manrope,sans-serif" font-weight="700" font-size="8" fill="#fff">BŪVE 2011</text>
         </g>
